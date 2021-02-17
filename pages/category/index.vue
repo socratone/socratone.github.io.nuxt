@@ -1,3 +1,4 @@
+<!-- 전체 블로그 리스트 -->
 <template>
   <div>
     <Header />

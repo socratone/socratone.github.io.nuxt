@@ -1,3 +1,4 @@
+<!-- 블로그 글 -->
 <template>
   <div>
     <Header />
