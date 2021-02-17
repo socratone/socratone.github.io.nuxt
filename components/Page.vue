@@ -1,7 +1,7 @@
 <template>
-  <main class="page">
+  <article class="page">
     <slot></slot>
-  </main>
+  </article>
 </template>
 
 <style>

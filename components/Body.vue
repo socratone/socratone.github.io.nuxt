@@ -1,7 +1,7 @@
 <template>
-  <section class="body">
+  <main class="body">
     <slot></slot>
-  </section>
+  </main>
 </template>
 
 <style>

@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <div>
     <Header />
     <Body>
       <Page>
@@ -7,7 +7,7 @@
       </Page>
       <Category />
     </Body>
-  </article>
+  </div>
 </template>
 
 <script>
