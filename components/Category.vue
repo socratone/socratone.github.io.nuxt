@@ -11,8 +11,7 @@
 
 <style>
 .category {
-  flex-grow: 0;
+  width: 18rem;
   flex-shrink: 0;
-  width: 20rem;
 }
 </style>

@@ -6,6 +6,7 @@
 
 <style>
 .page {
+  width: 0;
   flex-grow: 1;
   margin-right: 2rem;
 }
