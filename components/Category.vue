@@ -2,7 +2,8 @@
   <aside class="category">
     <nav>
       <ul>
-        <li><router-link to="/blog?category=typescript">TypeScript</router-link></li>
+        <li><router-link to="/category/typescript">TypeScript</router-link></li>
+        <li><router-link to="/category/javascript">JavaScript</router-link></li>
       </ul>
     </nav>
   </aside>
