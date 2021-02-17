@@ -3,7 +3,7 @@
     <Header />
     <Body>
       <Page>
-        <Logo />
+        {{ title }}
       </Page>
       <Category />
     </Body>
@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      title: 'Hello World!!!!'
+      title: 'develop'
     }
   },
 }
