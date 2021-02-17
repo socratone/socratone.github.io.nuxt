@@ -10,7 +10,7 @@
   margin-right: 2rem;
 }
 
-.page *:first-child {
+.page h1:first-child {
   margin-top: 0;
 }
 </style>

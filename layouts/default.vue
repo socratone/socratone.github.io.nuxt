@@ -34,6 +34,29 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin: 3rem 0 2rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 2rem 0;
+}
+
 code {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     monospace;
