@@ -6,7 +6,7 @@
       </p>
       <ul class="header__list">
         <li class="header__list-item">
-          <router-link to="/blog">개발</router-link>
+          <router-link to="/blog?category=typescript">개발</router-link>
         </li>
         <li class="header__list-item">
           <router-link to="/blog">음악</router-link>

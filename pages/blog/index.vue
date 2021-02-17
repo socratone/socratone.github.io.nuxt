@@ -31,12 +31,17 @@ export default {
       title: 'TypeScript'
     }
   },
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, query }) {
     const articles = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author'])
+      .where({
+        'category': {
+          $regex: [query.category, 'i']
+        }
+      })
+      // .without('body')
       .sortBy('createdAt', 'asc')
       .fetch()
-    console.log('articles:', articles)
+
     return {
       articles
     }
