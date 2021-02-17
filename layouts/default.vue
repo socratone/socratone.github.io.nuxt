@@ -9,7 +9,8 @@
   --color-primary: dodgerblue;
   --color-secondary: deeppink;
   --color-accent: gold;
-  --color-body: #333;
+  --color-font-primary: #333;
+  --color-font-secondary: grey;
   --color-border: gainsboro;
 }
 
@@ -23,7 +24,7 @@ body {
   height: 100vh;
   margin: 0;
   font-size: 1.8rem;
-  color: var(--color-body);
+  color: var(--color-font-primary);
 }
 
 *,
@@ -64,7 +65,7 @@ code {
 }
 
 a {
-  color: var(--color-body);
+  color: var(--color-font-primary);
   text-decoration: none;
 }
 

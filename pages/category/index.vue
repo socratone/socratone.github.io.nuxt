@@ -5,18 +5,7 @@
     <Body>
       <Page>
         <h1>전체보기</h1>
-        <ul>
-          <li v-for="article of articles" :key="article.slug">
-            <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
-              <img :src="require(`~/assets/images/${article.img}`)" width="100" />
-              <div>
-                <h2>{{ article.title }}</h2>
-                <p>by {{ article.author }}</p>
-                <p>{{ article.description }}</p>
-              </div>
-            </NuxtLink>
-          </li>
-        </ul>
+        <BlogList v-bind:articles="articles" />
       </Page>
       <Category />
     </Body>
@@ -25,7 +14,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData({ $content }) {
     const articles = await $content('articles')
       .sortBy('createdAt', 'desc')
       .fetch()
@@ -38,5 +27,4 @@ export default {
 </script>
 
 <style>
-
 </style>
