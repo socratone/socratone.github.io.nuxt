@@ -1,15 +1,16 @@
 <template>
-  <main class="main">
+  <main class="page">
     <slot></slot>
   </main>
 </template>
 
 <style>
-.main {
+.page {
   flex-grow: 1;
+  margin-right: 2rem;
 }
 
-.main *:first-child {
+.page *:first-child {
   margin-top: 0;
 }
 </style>

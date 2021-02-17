@@ -2,16 +2,7 @@
   <aside class="category">
     <nav>
       <ul>
-        <li>Typescript</li>
-        <li>Jest</li>
-        <li>Docker</li>
-        <li>Database</li>
-        <li>Redux</li>
-        <li>Bundler</li>
-        <li>Electron</li>
-        <li>React Native</li>
-        <li>React</li>
-        <li>AWS</li>
+        <li><router-link to="/blog">TypeScript</router-link></li>
       </ul>
     </nav>
   </aside>
@@ -20,6 +11,7 @@
 <style>
 .category {
   flex-grow: 0;
+  flex-shrink: 0;
   width: 20rem;
 }
 </style>

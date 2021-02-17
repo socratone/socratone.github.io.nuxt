@@ -2,10 +2,9 @@
   <div>
     <Header />
     <Body>
-      <Page>
+      <main class="main">
         <Logo />
-      </Page>
-      <Category />
+      </main>
     </Body>
   </div>
 </template>
@@ -20,6 +19,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 </style>
