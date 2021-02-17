@@ -30,4 +30,10 @@
 .category__link {
   color: var(--color-font-secondary);
 }
+
+@media screen and (max-width: 800px) {
+  .category {
+    display: none;
+  }
+}
 </style>

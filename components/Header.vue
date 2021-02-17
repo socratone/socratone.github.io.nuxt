@@ -12,6 +12,11 @@
           <router-link to="/category">음악</router-link>
         </li>
       </ul>
+      <button class="header__bars-button">
+        <svg width="20" height="20" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.333 341.333">
+          <path d="M0 277.333h341.333V320H0zm0-128h341.333V192H0zm0-128h341.333V64H0z"></path>
+        </svg>
+      </button>
     </nav>
   </header>
 </template>
@@ -46,5 +51,22 @@
 
 .header__list-item:last-child {
   margin-right: 0;
+}
+
+.header__bars-button {
+  
+
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header__list {
+    display: none;
+  }
+
+  .header__bars-button {
+    display: flex;
+    align-items: center;
+  }
 }
 </style>

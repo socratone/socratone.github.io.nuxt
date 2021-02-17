@@ -14,4 +14,10 @@
 .page h1:first-child {
   margin-top: 0;
 }
+
+@media screen and (max-width: 800px) {
+  .page {
+    margin-right: 0;
+  }
+}
 </style>
