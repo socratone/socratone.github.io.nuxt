@@ -19,7 +19,7 @@
 <style>
 .header {
   height: 5rem;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header__nav {
