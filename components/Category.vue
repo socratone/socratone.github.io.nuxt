@@ -1,5 +1,5 @@
 <template>
-  <aside class="category">
+  <aside class="category" v-bind:class="{ 'category--mobile': isMobile }">
     <nav>
       <ul>
         <li class="category__link-container">
@@ -22,6 +22,12 @@
   </aside>
 </template>
 
+<script>
+export default {
+  props: ['isMobile']
+}
+</script>
+
 <style scoped>
 .category {
   width: 18rem;
@@ -40,6 +46,11 @@
 @media screen and (max-width: 800px) {
   .category {
     display: none;
+  }
+
+  .category--mobile {
+    display: block;
+    width: 100%;
   }
 }
 </style>

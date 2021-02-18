@@ -9,16 +9,42 @@
           <router-link to="/category">BLOG</router-link>
         </li>
       </ul>
-      <button class="header__bars-button">
-        <svg width="20" height="20" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.333 341.333">
+      <button class="header__bars-button" v-on:click="handleBarsClick">
+        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.333 341.333">
           <path d="M0 277.333h341.333V320H0zm0-128h341.333V192H0zm0-128h341.333V64H0z"></path>
         </svg>
       </button>
+      <section class="header__category-container" v-if="isClickBars">
+        <div class="header__x-container">
+          <button class="header__bars-button" v-on:click="handleBarsClick">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.667 386.667">
+              <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/>
+            </svg>
+          </button>
+        </div>
+        <Category v-bind:isMobile="true" />
+      </section>
     </nav>
   </header>
 </template>
 
-<style>
+<script>
+export default {
+  data() {
+    return {
+      isClickBars: false
+    }
+  },
+  methods: {
+    handleBarsClick: function () {
+      if (this.isClickBars === false) this.isClickBars = true;
+      else this.isClickBars = false;
+    }
+  }
+}
+</script>
+
+<style scoped>
 .header {
   height: 5rem;
   border-bottom: 1px solid var(--color-border);
@@ -51,9 +77,26 @@
 }
 
 .header__bars-button {
-  
-
   display: none;
+}
+
+.header__x-container {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__category-container {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 18rem;
+  height: 100vh;
+  padding-right: 2rem;
+  background: white;
+  border-left: 1px solid var(--color-border);
 }
 
 @media screen and (max-width: 800px) {
