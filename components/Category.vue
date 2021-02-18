@@ -3,6 +3,11 @@
     <nav>
       <ul>
         <li class="category__link-container">
+          <router-link class="category__link" to="/category">
+            전체보기
+          </router-link>
+        </li>
+        <li class="category__link-container">
           <router-link class="category__link" to="/category/vuejs">
             VueJS
           </router-link>
