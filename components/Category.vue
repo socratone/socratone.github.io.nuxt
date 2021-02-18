@@ -3,6 +3,11 @@
     <nav>
       <ul>
         <li class="category__link-container">
+          <router-link class="category__link" to="/category/vuejs">
+            VueJS
+          </router-link>
+        </li>
+        <li class="category__link-container">
           <router-link class="category__link" to="/category/typescript">
             TypeScript
           </router-link>
