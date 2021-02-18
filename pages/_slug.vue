@@ -22,13 +22,17 @@
 </script>
 
 <style>
-  .nuxt-content p {
-    margin-bottom: 2rem;
-  }
-
   .nuxt-content pre {
     border-radius: 12px;
     margin-bottom: 2rem;
     font-size: 1.6rem;
+  }
+
+  .nuxt-content p {
+    color: var(--color-font-page);
+  }
+
+  .nuxt-content a {
+    color: dodgerblue;
   }
 </style>

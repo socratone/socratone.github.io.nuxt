@@ -11,6 +11,7 @@
   --color-accent: gold;
   --color-font-primary: #333;
   --color-font-secondary: grey;
+  --color-font-page: #626262;
   --color-border: gainsboro;
 }
 
