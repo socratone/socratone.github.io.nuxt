@@ -9,14 +9,22 @@
           <router-link to="/category">BLOG</router-link>
         </li>
       </ul>
-      <button class="header__bars-button" v-on:click="handleBarsClick">
+      <button 
+        aria-label="Show Category"
+        class="header__bars-button" 
+        v-on:click="handleBarsClick"
+      >
         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.333 341.333">
           <path d="M0 277.333h341.333V320H0zm0-128h341.333V192H0zm0-128h341.333V64H0z"></path>
         </svg>
       </button>
       <section class="header__category-container" v-if="isClickBars">
         <div class="header__x-container">
-          <button class="header__bars-button" v-on:click="handleBarsClick">
+          <button 
+            aria-label="Hide Category"
+            class="header__bars-button" 
+            v-on:click="handleBarsClick"
+          >
             <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.667 386.667">
               <path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/>
             </svg>

@@ -45,7 +45,7 @@
   }
 
   .nuxt-content p {
-    color: var(--color-font-page);
+    color: var(--color-font-secondary);
   }
 
   .nuxt-content a {

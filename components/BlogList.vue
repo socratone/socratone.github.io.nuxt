@@ -2,7 +2,11 @@
   <ul>
     <li class="blog-item" v-for="article of articles" :key="article.slug">
       <div class="blog-item__image-container">
-        <img :src="require(`~/assets/images/${article.img}`)" width="70" />
+        <img 
+          :src="require(`~/assets/images/${article.img}`)" 
+          v-bind:alt="article.alt" 
+          width="70" 
+        />
       </div>
       <div class="blog-item__text-container">
         <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
