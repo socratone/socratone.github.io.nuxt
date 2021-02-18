@@ -4,7 +4,7 @@
     <Header />
     <Body>
       <Page>
-        <h1>{{ this.$route.params.slug }}</h1>
+        <h1 class="title">{{ this.$route.params.slug }}</h1>
         <BlogList v-bind:articles="articles" />
       </Page>
       <Category />
@@ -31,5 +31,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.title {
+  text-transform: capitalize;
+}
 </style>
