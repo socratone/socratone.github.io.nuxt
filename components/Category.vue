@@ -8,8 +8,8 @@
           </router-link>
         </li>
         <li class="category__link-container">
-          <router-link class="category__link" to="/category/javascript">
-            JavaScript
+          <router-link class="category__link" to="/category/docker">
+            Docker
           </router-link>
         </li>
       </ul>
