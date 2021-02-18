@@ -24,6 +24,7 @@
 }
 
 .category__link-container {
+  text-align: right;
   margin-bottom: 0.5rem;
 }
 
