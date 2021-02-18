@@ -10,7 +10,7 @@
   --color-secondary: deeppink;
   --color-accent: gold;
   --color-font-primary: #333;
-  --color-font-secondary: #626262;
+  --color-font-secondary: #555;
   --color-border: gainsboro;
 }
 
