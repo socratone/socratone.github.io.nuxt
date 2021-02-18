@@ -6,10 +6,7 @@
       </p>
       <ul class="header__list">
         <li class="header__list-item">
-          <router-link to="/category">개발</router-link>
-        </li>
-        <li class="header__list-item">
-          <router-link to="/category">음악</router-link>
+          <router-link to="/category">BLOG</router-link>
         </li>
       </ul>
       <button class="header__bars-button">
