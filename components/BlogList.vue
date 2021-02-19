@@ -2,11 +2,22 @@
   <ul>
     <li class="blog-item" v-for="article of articles" :key="article.slug">
       <div class="blog-item__image-container">
-        <img 
-          :src="require(`~/assets/images/${article.img}`)" 
-          v-bind:alt="article.alt" 
-          width="70" 
-        />
+        <picture>
+          <!-- TODO: 레티나 디스플레이가 아닌 경우 1x 이미지를 불러올 수 있도록 설정 해야 한다. -->
+          <source 
+            type="image/webp" 
+            :srcset="require(`~/assets/images/${article.img}@2x.webp`)" 
+          />
+          <source 
+            type="image/png" 
+            :srcset="require(`~/assets/images/${article.img}@2x.png`)" 
+          />
+          <img 
+            :src="require(`~/assets/images/${article.img}@2x.png`)" 
+            v-bind:alt="article.alt" 
+            width="70" 
+          />
+        </picture>
       </div>
       <div class="blog-item__text-container">
         <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">

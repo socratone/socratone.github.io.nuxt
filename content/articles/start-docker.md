@@ -1,7 +1,7 @@
 ---
 title: Docker 시작하기
 description: 도커를 쓰는 기본적인 방법에 대해 다뤘습니다.
-img: js.webp
+img: docker
 alt: javascript icon
 author: socratone
 category: docker
