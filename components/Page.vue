@@ -11,6 +11,10 @@
   margin-right: 2rem;
 }
 
+.page:last-child {
+  margin-right: 0;
+}
+
 .page h1:first-child {
   margin-top: 0;
 }
