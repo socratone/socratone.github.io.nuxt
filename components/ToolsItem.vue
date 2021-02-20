@@ -36,6 +36,7 @@ export default {
 <style scoped>
 .tools-item {
   display: flex;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -50,11 +51,13 @@ export default {
 }
 
 .tools-item__title {
+  word-break: break-all;
   margin: 0;
 }
 
 .tools-item__description {
   color: var(--color-font-secondary);
+  word-break: break-all;
   margin: 0;
 }
 </style>

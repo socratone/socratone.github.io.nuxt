@@ -6,9 +6,6 @@
       </p>
       <ul class="header__list">
         <li class="header__list-item">
-          <router-link to="/tools">TOOLS</router-link>
-        </li>
-        <li class="header__list-item">
           <router-link to="/category">BLOG</router-link>
         </li>
       </ul>
