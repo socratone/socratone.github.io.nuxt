@@ -1,7 +1,7 @@
 ---
 title: VueJS 시작하기
-description: VueJS를 적용하는 방법에 대해서 다뤘습니다.
-img: vue
+description: VueJS를 간단히 실행해봅니다.
+img: vuejs
 alt: javascript icon
 author: socratone
 category: vuejs
@@ -9,5 +9,5 @@ category: vuejs
 
 # VueJS 시작하기
 
-Comming Soon...
+
 
