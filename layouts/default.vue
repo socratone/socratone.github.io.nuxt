@@ -9,6 +9,7 @@
   --color-primary: dodgerblue;
   --color-secondary: deeppink;
   --color-accent: gold;
+  --color-background-primary: #373636;
   --color-font-primary: #333;
   --color-font-secondary: #555;
   --color-border: gainsboro;
