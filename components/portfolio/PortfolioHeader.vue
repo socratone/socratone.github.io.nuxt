@@ -43,17 +43,37 @@
           <p class="linkText">Blog</p>
       </a>
     </address>
-    <img 
-      src="~/assets/images/portfolio/profile.png" 
-      alt="profile"
-      width="200"
-      class="profile"
-    />
-    <img 
-      src="~/assets/images/portfolio/desk.png" 
-      alt="desk"
-      class="desk"
-    />
+    <picture>
+      <source 
+        type="image/webp" 
+        srcset="~/assets/images/portfolio/profile@2x.webp" 
+      />
+      <source 
+        type="image/png" 
+        srcset="~/assets/images/portfolio/profile.png" 
+      />
+      <img 
+        src="~/assets/images/portfolio/profile.png" 
+        alt="profile"
+        width="200"
+        class="profile"
+      />
+    </picture>
+    <picture>
+      <source 
+        type="image/webp" 
+        srcset="~/assets/images/portfolio/desk@2x.webp" 
+      />
+      <source 
+        type="image/png" 
+        srcset="~/assets/images/portfolio/desk.png" 
+      />
+      <img 
+        src="~/assets/images/portfolio/desk.png" 
+        alt="desk"
+        class="desk"
+      />
+    </picture>
   </header>
 </template>
 
