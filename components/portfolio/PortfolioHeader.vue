@@ -126,7 +126,7 @@ p {
 
 .header {
   background: var(--color-background-primary);
-  padding: 100px 0 0 0;
+  padding: 60px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
