@@ -8,7 +8,7 @@
           </router-link>
         </li>
         <li class="category__link-container">
-          <router-link class="category__link" to="/algorithm">
+          <router-link class="category__link" to="/category/algorithm">
             Algorithm
           </router-link>
         </li>
