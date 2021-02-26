@@ -51,4 +51,8 @@
   .nuxt-content a {
     color: dodgerblue;
   }
+
+  .nuxt-content img {
+    width: 100%;
+  }
 </style>
